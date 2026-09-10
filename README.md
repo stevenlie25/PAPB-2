@@ -29,6 +29,8 @@ Kode dikembangkan dari materi Modul 2 dengan beberapa penyesuaian:
 
 ## Screenshots
 
-| Tombol Follow | Tombol Follow |
+| Tombol Follow | Tombol Unfollow |
 | :---: | :---: |
-| ![Follow](PAPB2_Follow.jpeg) | ![Unfollow](PAPB2_Unfollow.jpeg)
+| ![Follow1](PAPB2_Follow.jpeg) | ![Unfollow1](PAPB2_Unfollow.jpeg) |
+| ![Follow2](PAPB2_Follow2.jpeg) | ![Unfollow2](PAPB2_Unfollow2.jpeg)
+
