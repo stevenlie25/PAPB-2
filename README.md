@@ -14,7 +14,7 @@ Kode dikembangkan dari materi Modul 2 dengan beberapa penyesuaian:
 
 ---
 
-## Analisis Praktis
+## Analisis Singkat
 
 **Perbandingan Jetpack Compose vs XML Layout:**
 * **Jetpack Compose (Declarative UI)**: Tampilan ditulis langsung di Kotlin tanpa file XML terpisah. UI otomatis memperbarui diri ketika data/state berubah.
@@ -24,3 +24,11 @@ Kode dikembangkan dari materi Modul 2 dengan beberapa penyesuaian:
 1. **Kode Lebih Sedikit**: Bebas dari file XML terpisah dan panggilan `findViewById()`.
 2. **Reusable**: UI berbentuk fungsi (`@Composable`) yang mudah dipanggil kembali di mana saja.
 3. **Manajemen State Efisien**: UI otomatis memperbarui diri saat state berubah, membuat kode minim *bug* dan mudah dirawat.
+
+---
+
+## Screenshots
+
+| Tombol Follow | Tombol Follow |
+| :---: | :---: |
+| ![Follow](PAPB2_Follow.jpeg) | ![Unfollow](PAPB2_Unfollow.jpeg)
