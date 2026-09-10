@@ -1,6 +1,6 @@
 # Tugas Praktikum PAPB - Bab 2: Konsep Dasar UI Jetpack Compose
 
-Aplikasi android sederhana berbasis Jetpack Compose yang menampilkan halaman profil pengguna beserta interaksi tombol Follow/Unfollow.
+Aplikasi Android sederhana berbasis Jetpack Compose yang menampilkan halaman profil pengguna beserta interaksi tombol Follow/Unfollow.
 
 ---
 
@@ -28,8 +28,13 @@ Kode pada aplikasi ini disusun berdasarkan panduan pada Modul 2 dengan beberapa 
 
 ---
 
-## 💡 Analisis Singkat: Jetpack Compose vs XML Layout
+## 💡 Analisis Praktis
 
-- **Lebih Ringkas & Bebas Boilerplate**: Compose tidak memerlukan pemanggilan `findViewById()` atau *view binding*. Semua UI dideklarasikan secara langsung menggunakan fungsi Kotlin (`@Composable`)[cite: 1].
-- **UI Deklaratif**: Perubahan tampilan (seperti teks tombol saat di-klik) diatur secara otomatis berdasarkan perubahan data/state (`mutableStateOf`), tanpa perlu mengubah properti elemen secara manual seperti pada UI Imperatif XML[cite: 1].
-- **Pemeliharaan Lebih Mudah**: Pengaturan komponen, tema, dan logika UI berada dalam satu lingkungan bahasa (Kotlin), sehingga lebih terstruktur dan mudah dipelihara.
+### **Perbandingan Jetpack Compose vs XML Layout (LinearLayout)**
+- **Jetpack Compose**: Menggunakan pendekatan *Declarative UI*[cite: 1]. Kita cukup menuliskan UI-nya langsung di dalam bahasa Kotlin tanpa perlu file terpisah[cite: 1]. Jika data berubah, UI akan secara otomatis memperbarui dirinya sendiri[cite: 1].
+- **XML Layout**: Menggunakan pendekatan *Imperative UI*[cite: 1]. Kita perlu membuat file terpisah (XML untuk tampilan, lalu dihubungkan dengan logika di Kotlin/Java menggunakan `findViewById()`)[cite: 1]. Properti tampilan harus diubah secara manual lewat logika tiap kali ada perubahan data[cite: 1].
+
+### **Keuntungan Compose dari Sisi Produktivitas & Pemeliharaan Kode**
+- **Kode jauh lebih sedikit**: Tidak perlu bolak-balik antara file XML dan Kotlin, serta tidak perlu lagi menulis kode panjang hanya untuk memanggil `findViewById()`, sebab semuanya langsung ditulis di satu tempat menggunakan Kotlin[cite: 1].
+- **Komponen mudah dipakai ulang (Reusable)**: UI dibuat berupa fungsi (`@Composable`) yang bisa dipanggil kembali dengan mudah di mana saja layaknya fungsi biasa[cite: 1].
+- **Perubahan state lebih efisien**: Tampilan layar langsung memperbarui dirinya sendiri saat data/state berubah, membuat logika penanganan UI jadi jauh lebih rapi, minim bug, dan gampang dirawat (*maintenance*)[cite: 1].
